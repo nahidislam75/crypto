@@ -1,0 +1,94 @@
+.details {
+  width: 30%;
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  border-right: 2px solid grey;
+  flex-direction: column;
+}
+
+.details h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.details h6 {
+  width: 100%;
+  padding: 25px;
+  text-align: justify;
+  padding-top: 0;
+  padding-bottom: 15px;
+}
+
+.img {
+  background: transparent;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.img img {
+  margin: auto;
+  display: flex;
+  max-width: 150px;
+}
+
+.more-detail {
+  padding: 10px;
+  margin: 10px;
+  line-height: 50px;
+}
+
+.more-detail .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.more-detail .value {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn-custom {
+  color: #fff;
+  background: transparent;
+  font-weight: 400;
+  font-size: 18px;
+  border: 1px solid #fff;
+  width: 23%;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background: rgba(0, 150, 136, 0.5);
+  border: 1px solid rgba(0, 150, 136, 0.5);
+}
+
+.btn-custom.active {
+  background: #009688;
+  font-weight: 700;
+  border: 1px solid #009688;
+}
+
+* {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .details {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn-custom {
+    font-size: 14px;
+  }
+
+  .more-detail .title,
+  .more-detail .value {
+    font-size: 16px;
+  }
+}
